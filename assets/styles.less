@@ -1,0 +1,195 @@
+body {
+    font-family: "Arial Narrow", Arial, sans-serif;
+}
+.dynamicContent {
+    padding-left: 20%;
+    margin-top: 20px;
+}
+
+@lightBlue: #00aeef;
+@darkerBlue: #0075b5;
+
+.highlight {
+    background-color: @lightBlue !important;
+
+}
+
+#container {
+    max-width: 960px;
+    width: 100%;
+    margin: 150px auto;
+    #title {
+        #first, #second {
+            width: 50%;
+            text-align: center;
+            display: inline-block;
+            text-transform: uppercase;
+            margin: 0;
+            cursor: pointer;
+            padding: 20px 0;
+            transition: background-color 0.5s, color 0.5s;
+            border-bottom: 1px solid transparent;
+            background-color: #f5f5f5;
+            font-size: 14px;
+            &:hover {
+                background-color: @lightBlue;
+                color: white;
+            }
+        }
+        #second {
+            float:right;
+        }
+    }
+    #p1{
+        #content1, #content2, #content3 {
+            width: 100%;
+            display: block;
+            float: left;
+            .icon {
+                margin: 2% 0 0 20%;
+            }
+        }
+        #content1 {
+            background-color: #f1f1f1;
+            .icon{
+                background: transparent url('img/sprite.png') no-repeat 0 0;
+                display: inline-block;
+                width: 32px;
+                height: 35px;
+            }
+
+        }
+        #content2 {
+            background-color: #f5f5f5;
+            .icon {
+                background: transparent url('img/sprite.png') no-repeat -32px 0;
+                display: inline-block;
+                width: 25px;
+                height: 35px;
+            }
+        }
+        #content3 {
+            background-color: #f9f9f9;
+            .icon {
+                background: transparent url('img/sprite.png') no-repeat -58px 0;
+                display: inline-block;
+                width: 50px;
+                height: 35px;
+            }
+        }
+
+    }
+
+
+    #p2{
+        display: none;
+        #content4, #content5, #content6 {
+            width: 100%;
+            display: block;
+            float: left;
+            .icon {
+                margin: 2% 0 0 20%;
+            }
+        }
+        #content4{
+            background-color: #f1f1f1;
+            .icon{
+                background: transparent url('img/sprite.png') no-repeat -108px 0;
+                display: inline-block;
+                width: 30px;
+                height: 35px;
+
+            }
+        }
+        #content5{
+            background-color: #f5f5f5;
+            .icon{
+                background: transparent url('img/sprite.png') no-repeat -32px 0;
+                display: inline-block;
+                width: 25px;
+                height: 35px;
+
+            }
+        }
+        #content6{
+            background-color: #f9f9f9;
+            .icon{
+                background: transparent url('img/sprite.png') no-repeat -137px 0;
+                display: inline-block;
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+
+    .dynamicContent {
+        .count {
+            font-size: 80px;
+            font-weight: 900;
+            color: @darkerBlue;
+
+
+        }
+        .countTxt {
+            font-weight: 900;
+            font-size: 18px;
+
+        }
+        .participantsTxt {
+            margin-top: 30px;
+            color: #cecece;
+
+        }
+        .participantCount {
+            color: @lightBlue;
+            font-weight: 900;
+            font-size: 22px;
+
+        }
+        span {
+            font-size: 30px;
+            text-transform: uppercase;
+
+        }
+
+    }
+
+}
+@media (min-width: 768px) {
+    #container {
+        #p1{
+            #content1, #content2, #content3 {
+                width: 33.3%;
+            }
+        }
+        #p2{
+            #content4, #content5, #content6 {
+                width: 33.3%;
+            }
+        }
+        #title {
+            #first, #second {
+                font-size: 18px;
+            }
+        }
+        .dynamicContent {
+            .count {
+                font-size: 100px;
+
+
+            }
+            .countTxt {
+                font-size: 20px;
+
+            }
+            .participantsTxt {
+
+
+            }
+            .participantCount {
+
+            }
+        }
+    }
+
+}
