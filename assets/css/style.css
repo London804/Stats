@@ -2,8 +2,18 @@ body {
   font-family: "Arial Narrow", Arial, sans-serif;
 }
 .dynamicContent {
-  padding-left: 20%;
-  margin-top: 20px;
+  float: left;
+  width: 100%;
+}
+.dynamicContent .wrapper {
+  width: 33.3%;
+  float: left;
+}
+.dynamicContent .wrapper .count,
+.dynamicContent .wrapper .countTxt,
+.dynamicContent .wrapper .participantsTxt,
+.dynamicContent .wrapper .participantCount {
+  padding-left: 18%;
 }
 .highlight {
   background-color: #00aeef !important;
@@ -38,7 +48,7 @@ body {
 #container #p1 #content1,
 #container #p1 #content2,
 #container #p1 #content3 {
-  width: 100%;
+  width: 33.3%;
   display: block;
   float: left;
 }
@@ -51,7 +61,7 @@ body {
   background-color: #f1f1f1;
 }
 #container #p1 #content1 .icon {
-  background: transparent url('img/sprite.png') no-repeat 0 0;
+  background: transparent url('../img/sprite.png') no-repeat 0 0;
   display: inline-block;
   width: 32px;
   height: 35px;
@@ -60,7 +70,7 @@ body {
   background-color: #f5f5f5;
 }
 #container #p1 #content2 .icon {
-  background: transparent url('img/sprite.png') no-repeat -32px 0;
+  background: transparent url('../img/sprite.png') no-repeat -32px 0;
   display: inline-block;
   width: 25px;
   height: 35px;
@@ -69,7 +79,7 @@ body {
   background-color: #f9f9f9;
 }
 #container #p1 #content3 .icon {
-  background: transparent url('img/sprite.png') no-repeat -58px 0;
+  background: transparent url('../img/sprite.png') no-repeat -58px 0;
   display: inline-block;
   width: 50px;
   height: 35px;
@@ -93,7 +103,7 @@ body {
   background-color: #f1f1f1;
 }
 #container #p2 #content4 .icon {
-  background: transparent url('img/sprite.png') no-repeat -108px 0;
+  background: transparent url('../img/sprite.png') no-repeat -108px 0;
   display: inline-block;
   width: 30px;
   height: 35px;
@@ -102,7 +112,7 @@ body {
   background-color: #f5f5f5;
 }
 #container #p2 #content5 .icon {
-  background: transparent url('img/sprite.png') no-repeat -32px 0;
+  background: transparent url('../img/sprite.png') no-repeat -32px 0;
   display: inline-block;
   width: 25px;
   height: 35px;
@@ -111,7 +121,7 @@ body {
   background-color: #f9f9f9;
 }
 #container #p2 #content6 .icon {
-  background: transparent url('img/sprite.png') no-repeat -137px 0;
+  background: transparent url('../img/sprite.png') no-repeat -137px 0;
   display: inline-block;
   width: 35px;
   height: 35px;
