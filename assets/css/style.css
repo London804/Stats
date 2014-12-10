@@ -2,12 +2,10 @@ body {
   font-family: "Arial Narrow", Arial, sans-serif;
 }
 .dynamicContent {
-  float: left;
   width: 100%;
 }
 .dynamicContent .wrapper {
-  width: 33.3%;
-  float: left;
+  width: 100%;
 }
 .dynamicContent .wrapper .count,
 .dynamicContent .wrapper .countTxt,
@@ -48,7 +46,7 @@ body {
 #container #p1 #content1,
 #container #p1 #content2,
 #container #p1 #content3 {
-  width: 33.3%;
+  width: 100%;
   display: block;
   float: left;
 }
@@ -168,5 +166,25 @@ body {
   }
   #container .dynamicContent .countTxt {
     font-size: 20px;
+  }
+  .dynamicContent {
+    float: auto;
+  }
+  .dynamicContent .wrapper {
+    width: 100%;
+  }
+  .dynamicContent {
+    float: left;
+    width: 100%;
+  }
+  .dynamicContent .wrapper {
+    width: 33.3%;
+    float: left;
+  }
+  .dynamicContent .wrapper .count,
+  .dynamicContent .wrapper .countTxt,
+  .dynamicContent .wrapper .participantsTxt,
+  .dynamicContent .wrapper .participantCount {
+    padding-left: 18%;
   }
 }

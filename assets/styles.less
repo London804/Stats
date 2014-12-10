@@ -2,11 +2,9 @@ body {
     font-family: "Arial Narrow", Arial, sans-serif;
 }
 .dynamicContent {
-    float: left;
     width: 100%;
     .wrapper {
-        width: 33.3%;
-        float: left;
+        width: 100%;
         .count, .countTxt, .participantsTxt, .participantCount {
             padding-left: 18%;
         }
@@ -52,7 +50,7 @@ body {
     }
     #p1{
         #content1, #content2, #content3 {
-            width: 33.3%;
+            width: 100%;
             display: block;
             float: left;
             .icon {
@@ -203,7 +201,21 @@ body {
     }
     .dynamicContent {
         float: auto;
+        .wrapper {
+            width: 100%;
+
+        }
+    }
+    .dynamicContent {
+        float: left;
         width: 100%;
+        .wrapper {
+            width: 33.3%;
+            float: left;
+            .count, .countTxt, .participantsTxt, .participantCount {
+                padding-left: 18%;
+            }
+        }
     }
 
 }

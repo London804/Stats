@@ -72,13 +72,14 @@ $(function(){
         $.each(data[0], function(key, value){
             var count = value.count,
                 countTxt = value.countTxt,
-                participantsTxt = value.participantTxt,
+                participantsTxt = value.participantsTxt,
                 participantCount = value.participantCount;
 
             $('.dynamicContent').append( "<div class='wrapper'>" + "<div class='count'>" + count + "</div>"  +
                 '<div class="countTxt">' + countTxt + '</div>' +
                  '<div class="participantsTxt">' + participantsTxt + '</div>' +
                  '<div class="participantCount">' + participantCount + '</div>' + '</div>');
+            console.log(participantsTxt);
         });
 
             //$.each(data[1], function(key, value){
