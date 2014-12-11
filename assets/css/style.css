@@ -1,17 +1,50 @@
 body {
   font-family: "Arial Narrow", Arial, sans-serif;
 }
-.dynamicContent {
+.dynamicContent,
+.dynamicContent2 {
   width: 100%;
 }
-.dynamicContent .wrapper {
+.dynamicContent .wrapper,
+.dynamicContent2 .wrapper {
   width: 100%;
 }
 .dynamicContent .wrapper .count,
+.dynamicContent2 .wrapper .count,
 .dynamicContent .wrapper .countTxt,
+.dynamicContent2 .wrapper .countTxt,
 .dynamicContent .wrapper .participantsTxt,
-.dynamicContent .wrapper .participantCount {
+.dynamicContent2 .wrapper .participantsTxt,
+.dynamicContent .wrapper .participantCount,
+.dynamicContent2 .wrapper .participantCount {
   padding-left: 18%;
+}
+.dynamicContent .count,
+.dynamicContent2 .count {
+  font-size: 80px;
+  font-weight: 900;
+  color: #0075b5;
+}
+.dynamicContent .countTxt,
+.dynamicContent2 .countTxt {
+  font-weight: 900;
+  font-size: 18px;
+}
+.dynamicContent .participantsTxt,
+.dynamicContent2 .participantsTxt {
+  margin-top: 30px;
+  color: #cecece;
+}
+.dynamicContent .participantCount,
+.dynamicContent2 .participantCount {
+  color: #00aeef;
+  font-weight: 900;
+  font-size: 22px;
+}
+.dynamicContent span,
+.dynamicContent2 span {
+  font-size: 30px;
+  text-transform: uppercase;
 }
 .highlight {
   background-color: #00aeef !important;
@@ -124,28 +157,6 @@ body {
   width: 35px;
   height: 35px;
 }
-#container .dynamicContent .count {
-  font-size: 80px;
-  font-weight: 900;
-  color: #0075b5;
-}
-#container .dynamicContent .countTxt {
-  font-weight: 900;
-  font-size: 18px;
-}
-#container .dynamicContent .participantsTxt {
-  margin-top: 30px;
-  color: #cecece;
-}
-#container .dynamicContent .participantCount {
-  color: #00aeef;
-  font-weight: 900;
-  font-size: 22px;
-}
-#container .dynamicContent span {
-  font-size: 30px;
-  text-transform: uppercase;
-}
 @media (min-width: 768px) {
   #container #p1 #content1,
   #container #p1 #content2,
@@ -161,30 +172,32 @@ body {
   #container #title #second {
     font-size: 18px;
   }
-  #container .dynamicContent .count {
-    font-size: 100px;
-  }
-  #container .dynamicContent .countTxt {
-    font-size: 20px;
-  }
-  .dynamicContent {
-    float: auto;
-  }
-  .dynamicContent .wrapper {
-    width: 100%;
-  }
-  .dynamicContent {
+  #container .dynamicContent,
+  #container .dynamicContent2 {
     float: left;
     width: 100%;
   }
-  .dynamicContent .wrapper {
+  #container .dynamicContent .wrapper,
+  #container .dynamicContent2 .wrapper {
     width: 33.3%;
     float: left;
   }
-  .dynamicContent .wrapper .count,
-  .dynamicContent .wrapper .countTxt,
-  .dynamicContent .wrapper .participantsTxt,
-  .dynamicContent .wrapper .participantCount {
+  #container .dynamicContent .wrapper .count,
+  #container .dynamicContent2 .wrapper .count,
+  #container .dynamicContent .wrapper .countTxt,
+  #container .dynamicContent2 .wrapper .countTxt,
+  #container .dynamicContent .wrapper .participantsTxt,
+  #container .dynamicContent2 .wrapper .participantsTxt,
+  #container .dynamicContent .wrapper .participantCount,
+  #container .dynamicContent2 .wrapper .participantCount {
     padding-left: 18%;
+  }
+  #container .dynamicContent .wrapper .count,
+  #container .dynamicContent2 .wrapper .count {
+    font-size: 100px;
+  }
+  #container .dynamicContent .wrapper .countTxt,
+  #container .dynamicContent2 .wrapper .countTxt {
+    font-size: 20px;
   }
 }

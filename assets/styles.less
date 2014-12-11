@@ -1,7 +1,7 @@
 body {
     font-family: "Arial Narrow", Arial, sans-serif;
 }
-.dynamicContent {
+.dynamicContent, .dynamicContent2 {
     width: 100%;
     .wrapper {
         width: 100%;
@@ -9,17 +9,40 @@ body {
             padding-left: 18%;
         }
     }
+    .count {
+        font-size: 80px;
+        font-weight: 900;
+        color: @darkerBlue;
+        
+    }
+    .countTxt {
+        font-weight: 900;
+        font-size: 18px;
+
+    }
+    .participantsTxt {
+        margin-top: 30px;
+        color: #cecece;
+
+    }
+    .participantCount {
+        color: @lightBlue;
+        font-weight: 900;
+        font-size: 22px;
+
+    }
+    span {
+        font-size: 30px;
+        text-transform: uppercase;
+
+    }
 }
-
-
-
 
 @lightBlue: #00aeef;
 @darkerBlue: #0075b5;
 
 .highlight {
     background-color: @lightBlue !important;
-
 }
 
 #container {
@@ -88,7 +111,6 @@ body {
 
     }
 
-
     #p2{
         display: none;
         #content4, #content5, #content6 {
@@ -130,38 +152,6 @@ body {
         }
     }
 
-    .dynamicContent {
-        .count {
-            font-size: 80px;
-            font-weight: 900;
-            color: @darkerBlue;
-
-
-        }
-        .countTxt {
-            font-weight: 900;
-            font-size: 18px;
-
-        }
-        .participantsTxt {
-            margin-top: 30px;
-            color: #cecece;
-
-        }
-        .participantCount {
-            color: @lightBlue;
-            font-weight: 900;
-            font-size: 22px;
-
-        }
-        span {
-            font-size: 30px;
-            text-transform: uppercase;
-
-        }
-
-    }
-
 }
 @media (min-width: 768px) {
     #container {
@@ -180,42 +170,29 @@ body {
                 font-size: 18px;
             }
         }
-        .dynamicContent {
-            .count {
-                font-size: 100px;
-
-
-            }
-            .countTxt {
-                font-size: 20px;
-
-            }
-            .participantsTxt {
-
-
-            }
-            .participantCount {
-
-            }
-        }
-    }
-    .dynamicContent {
-        float: auto;
-        .wrapper {
-            width: 100%;
-
-        }
-    }
-    .dynamicContent {
-        float: left;
-        width: 100%;
-        .wrapper {
-            width: 33.3%;
+        .dynamicContent, .dynamicContent2{
             float: left;
-            .count, .countTxt, .participantsTxt, .participantCount {
-                padding-left: 18%;
+            width: 100%;
+            .wrapper {
+                width: 33.3%;
+                float: left;
+                .count, .countTxt, .participantsTxt, .participantCount {
+                    padding-left: 18%;
+                }
+                .count {
+                    font-size: 100px;
+
+
+                }
+                .countTxt {
+                    font-size: 20px;
+
+                }
             }
         }
+
     }
+
+
 
 }
