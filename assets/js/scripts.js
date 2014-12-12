@@ -32,7 +32,7 @@ $(function(){
 
     });
 
-    //manual
+    //manual for version2 uncomment and change success to Manual
 
      //function Manual ( data ) {
      //    $('#content1 .dynamicContent').append( "<div class='count'>" + data[0][0].count + "</div>"
