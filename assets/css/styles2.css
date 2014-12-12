@@ -133,6 +133,7 @@ body {
   color: #00aeef;
   font-weight: 900;
   font-size: 22px;
+    padding-bottom: 5px;
 }
 #container .dynamicContent span {
   font-size: 30px;

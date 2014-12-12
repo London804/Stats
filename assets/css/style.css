@@ -7,7 +7,12 @@ body {
 }
 .dynamicContent .wrapper,
 .dynamicContent2 .wrapper {
+  background: #f1f1f1;
   width: 100%;
+}
+.dynamicContent .wrapper:nth-child(2),
+.dynamicContent2 .wrapper:nth-child(2) {
+  background: white;
 }
 .dynamicContent .wrapper .count,
 .dynamicContent2 .wrapper .count,
@@ -17,7 +22,7 @@ body {
 .dynamicContent2 .wrapper .participantsTxt,
 .dynamicContent .wrapper .participantCount,
 .dynamicContent2 .wrapper .participantCount {
-  padding-left: 18%;
+  padding-left: 15%;
 }
 .dynamicContent .count,
 .dynamicContent2 .count {
@@ -40,6 +45,7 @@ body {
   color: #00aeef;
   font-weight: 900;
   font-size: 22px;
+  padding-bottom: 5px;
 }
 .dynamicContent span,
 .dynamicContent2 span {
@@ -80,13 +86,13 @@ body {
 #container #p1 #content2,
 #container #p1 #content3 {
   width: 100%;
-  display: block;
+  display: none;
   float: left;
 }
 #container #p1 #content1 .icon,
 #container #p1 #content2 .icon,
 #container #p1 #content3 .icon {
-  margin: 2% 0 0 20%;
+  margin: 2% 0 0 16%;
 }
 #container #p1 #content1 {
   background-color: #f1f1f1;
@@ -98,7 +104,7 @@ body {
   height: 35px;
 }
 #container #p1 #content2 {
-  background-color: #f5f5f5;
+  background: white;
 }
 #container #p1 #content2 .icon {
   background: transparent url('../img/sprite.png') no-repeat -32px 0;
@@ -107,7 +113,7 @@ body {
   height: 35px;
 }
 #container #p1 #content3 {
-  background-color: #f9f9f9;
+  background: #f1f1f1;
 }
 #container #p1 #content3 .icon {
   background: transparent url('../img/sprite.png') no-repeat -58px 0;
@@ -122,13 +128,13 @@ body {
 #container #p2 #content5,
 #container #p2 #content6 {
   width: 100%;
-  display: block;
+  display: none;
   float: left;
 }
 #container #p2 #content4 .icon,
 #container #p2 #content5 .icon,
 #container #p2 #content6 .icon {
-  margin: 2% 0 0 20%;
+  margin: 2% 0 0 16%;
 }
 #container #p2 #content4 {
   background-color: #f1f1f1;
@@ -140,7 +146,7 @@ body {
   height: 35px;
 }
 #container #p2 #content5 {
-  background-color: #f5f5f5;
+  background: white;
 }
 #container #p2 #content5 .icon {
   background: transparent url('../img/sprite.png') no-repeat -32px 0;
@@ -149,7 +155,7 @@ body {
   height: 35px;
 }
 #container #p2 #content6 {
-  background-color: #f9f9f9;
+  background: #f1f1f1;
 }
 #container #p2 #content6 .icon {
   background: transparent url('../img/sprite.png') no-repeat -137px 0;
@@ -162,11 +168,13 @@ body {
   #container #p1 #content2,
   #container #p1 #content3 {
     width: 33.3%;
+    display: block;
   }
   #container #p2 #content4,
   #container #p2 #content5,
   #container #p2 #content6 {
     width: 33.3%;
+    display: block;
   }
   #container #title #first,
   #container #title #second {
@@ -190,7 +198,7 @@ body {
   #container .dynamicContent2 .wrapper .participantsTxt,
   #container .dynamicContent .wrapper .participantCount,
   #container .dynamicContent2 .wrapper .participantCount {
-    padding-left: 18%;
+    padding-left: 15%;
   }
   #container .dynamicContent .wrapper .count,
   #container .dynamicContent2 .wrapper .count {

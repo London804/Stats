@@ -107,24 +107,10 @@ $(function(){
             //     '<div class="participantCount">' + participantCount + '</div>');
             //}));
 
-        console.log(data[0]);
+        //console.log(data[0]);
     }
 
 //
 });
 
-
- //    $(".dynamicContent").append(value.particpantsTxt);
-//            $(".dynamicContent").append(value.participantCount);
-//            $('.count').append(value.count[0][0]);
-//                $('.countTxt').append(value.countTxt);
-//                $('.participantsText').append(value.participantsTxt);
-//                $('.participantCount').append(value.participantCount);
-//        for(i =0; i < val.length; i++){
-//                for (var propName in jsonObj) {
-//                    if (jsonObj.hasOwnProperty(propName)) {
-//                        return propName;    // or do something with it and break
-//                    }
-//                }
-//                $(".dynamicContent").append(value.count[0][0]);
 

@@ -4,9 +4,13 @@ body {
 .dynamicContent, .dynamicContent2 {
     width: 100%;
     .wrapper {
+        background: #f1f1f1;
         width: 100%;
+        &:nth-child(2){
+            background: white;
+        }
         .count, .countTxt, .participantsTxt, .participantCount {
-            padding-left: 18%;
+            padding-left: 15%;
         }
     }
     .count {
@@ -29,6 +33,7 @@ body {
         color: @lightBlue;
         font-weight: 900;
         font-size: 22px;
+        padding-bottom: 5px;
 
     }
     span {
@@ -72,13 +77,13 @@ body {
         }
     }
     #p1{
-//        #content1, #content2, #content3 {
-//            width: 100%;
-//            display: block;
-//            float: left;
-//            .icon {
-//                margin: 2% 0 0 20%;
-//            }
+        #content1, #content2, #content3 {
+            width: 100%;
+            display: none;
+            float: left;
+            .icon {
+                margin: 2% 0 0 16%;
+            }
         }
         #content1 {
             background-color: #f1f1f1;
@@ -91,7 +96,7 @@ body {
 
         }
         #content2 {
-            background-color: #f5f5f5;
+            background: white;
             .icon {
                 background: transparent url('../img/sprite.png') no-repeat -32px 0;
                 display: inline-block;
@@ -100,7 +105,7 @@ body {
             }
         }
         #content3 {
-            background-color: #f9f9f9;
+            background: #f1f1f1;
             .icon {
                 background: transparent url('../img/sprite.png') no-repeat -58px 0;
                 display: inline-block;
@@ -113,14 +118,14 @@ body {
 
     #p2{
         display: none;
-//        #content4, #content5, #content6 {
-//            width: 100%;
-//            display: block;
-//            float: left;
-//            .icon {
-//                margin: 2% 0 0 20%;
-//            }
-//        }
+        #content4, #content5, #content6 {
+            width: 100%;
+            display: none;
+            float: left;
+            .icon {
+                margin: 2% 0 0 16%;
+            }
+        }
         #content4{
             background-color: #f1f1f1;
             .icon{
@@ -132,7 +137,7 @@ body {
             }
         }
         #content5{
-            background-color: #f5f5f5;
+            background: white;
             .icon{
                 background: transparent url('../img/sprite.png') no-repeat -32px 0;
                 display: inline-block;
@@ -142,7 +147,7 @@ body {
             }
         }
         #content6{
-            background-color: #f9f9f9;
+            background: #f1f1f1;
             .icon{
                 background: transparent url('../img/sprite.png') no-repeat -137px 0;
                 display: inline-block;
@@ -158,11 +163,13 @@ body {
         #p1{
             #content1, #content2, #content3 {
                 width: 33.3%;
+                display: block;
             }
         }
         #p2{
             #content4, #content5, #content6 {
                 width: 33.3%;
+                display: block;
             }
         }
         #title {
@@ -177,7 +184,7 @@ body {
                 width: 33.3%;
                 float: left;
                 .count, .countTxt, .participantsTxt, .participantCount {
-                    padding-left: 18%;
+                    padding-left: 15%;
                 }
                 .count {
                     font-size: 100px;
