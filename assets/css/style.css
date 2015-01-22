@@ -12,7 +12,7 @@ body {
 }
 .dynamicContent .wrapper:nth-child(2),
 .dynamicContent2 .wrapper:nth-child(2) {
-  background: white;
+  background: #fafafa;
 }
 .dynamicContent .wrapper .count,
 .dynamicContent2 .wrapper .count,
@@ -104,7 +104,7 @@ body {
   height: 35px;
 }
 #container #p1 #content2 {
-  background: white;
+  background: #fafafa;
 }
 #container #p1 #content2 .icon {
   background: transparent url('../img/sprite.png') no-repeat -32px 0;
@@ -146,7 +146,7 @@ body {
   height: 35px;
 }
 #container #p2 #content5 {
-  background: white;
+  background: #fafafa;
 }
 #container #p2 #content5 .icon {
   background: transparent url('../img/sprite.png') no-repeat -32px 0;

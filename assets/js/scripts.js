@@ -1,11 +1,12 @@
 $(function(){
+    $('#first').addClass('highlight');
     $('#first').click(function(){
        $('#p2').fadeOut(500 ,function(){
            $('#p1').fadeIn(500);
            if($('#p1').css('display') === 'block'){
-            $('#first').removeClass('highlight');
+            $('#second').removeClass('highlight');
            }
-           $('#second').addClass('highlight');
+           $('#first').addClass('highlight');
 
        });
     });
@@ -13,9 +14,9 @@ $(function(){
         $('#p1').fadeOut(500, function(){
             $('#p2').fadeIn(500);
             if($('#p2').css('display') === 'block'){
-                $('#second').removeClass('highlight');
+                $('#first').removeClass('highlight');
             }
-            $('#first').addClass('highlight');
+            $('#second').addClass('highlight');
         });
     });
 
