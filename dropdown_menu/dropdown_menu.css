@@ -1,0 +1,53 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  width: 200px;
+  height: 70px;
+  background-color: orange;
+}
+
+ul {
+    list-style: none;
+}
+ul li {
+    width: 200px;
+    height: 70px;
+    border: 1px solid black;
+    line-height: 70px;
+    text-align: center;
+}
+
+#myMenu li {
+    background: #ffc7b9;
+}
+
+#myMenu li:last-child:hover #subMenu, #subMenu li:last-child:hover #nestedSubMenu  {
+    display: block;
+}
+
+#subMenu, #nestedSubMenu {
+    position: relative;
+    left: 161px;
+    top: -72px;
+    display: none;
+
+}
+
+#subMenu li {
+   background: #fab9ef;
+
+}
+
+#nestedSubMenu li {
+    background: #a8fea5;
+    -webkit-transition: opacity 1s ease;
+}
+
+#myMenu li:nth-child(2), #subMenu li:nth-child(2), #nestedSubMenu li:nth-child(2) {
+    border-top: none;
+    border-bottom: none;
+
+}
